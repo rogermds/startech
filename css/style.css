@@ -1,10 +1,27 @@
+html body {
+    height: 2000px;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+
 header {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+header .wrapper {
+    padding: 0px 15px 0px 15px;
     display: flex;
     width: 100%;
     height: 75px;
     justify-content: space-between;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 9%, rgba(68,93,130,1) 30%, rgba(2,0,36,1) 54%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 9%, rgb(36, 60, 97) 30%, rgba(2, 0, 36, 1) 54%);
     align-items: center;
     border: 1px rgb(68, 11, 109) solid;
 }
@@ -16,30 +33,61 @@ header div.logo a {
 }
 
 header div.logo a h1 {
-    margin-left: 20px;
+    margin: 20px 0px 0px 20px;
+    font-family: 'Baloo Tammudu 2', cursive;
 }
 
 header .logo img {
     height: 75px;
-    text-decoration: none;
     margin-left: 20px;
 }
 
-header div.navegation nav a {
+header div.navegation ul {
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    align-items: center;
+    margin: 0px;
+}
+
+header div.navegation ul li {
+    background-color: rgb(19, 19, 56);
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 8px 20px;
+    padding-bottom: 0px;
+}
+
+header div.navegation ul a {
     text-decoration: none;
-    margin-right: 25px;
 }
 
-header div.navegation nav a:last-child {
-    margin-right: 35px;
+header div.navegation ul li:last-child {
+    margin-right: 40px;
 }
 
-main .content {
-    height: 1600px;
-    background-image: url('../images/background.jpg');
-    opacity: 0.95;
-    background-size: cover;
-    background-repeat: no-repeat;
+main .principal {
+    display: flex;
+    justify-content: center;
+}
+
+main .principal .card1 {
+    display: flex;
+    width: 85%;
+    height: 500px;
+    margin: 50px 0px;
+    align-items: center;
+}
+
+main .principal .card1 .img1 img {
+    height: 450px;
+    border-radius: 100px;
+    margin-left: 25px;
+}
+
+main .principal .card1 .texto1 {
+    text-align: center;
     color: white;
+    margin-left: 50px;
+    font-size: 30px;
 }
-
