@@ -50,44 +50,96 @@ header div.navegation ul {
     margin: 0px;
 }
 
-header div.navegation ul li {
+header div.navegation ul a {
+    text-decoration: none;
+}
+
+header div.navegation ul a li {
     background-color: rgb(19, 19, 56);
     border: 1px solid;
     border-radius: 20px;
     padding: 8px 20px;
     padding-bottom: 0px;
+    transition: 1s;
 }
 
-header div.navegation ul a {
-    text-decoration: none;
-}
-
-header div.navegation ul li:last-child {
+header div.navegation ul a li:last-child {
     margin-right: 40px;
+}
+
+header div .navegation ul a li:hover {
+    background-color: aliceblue;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 main .principal {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 main .principal .card1 {
     display: flex;
-    width: 85%;
+    width: 100%;
     height: 500px;
-    margin: 50px 0px;
+    margin: 200px 0px 200px 0px;
     align-items: center;
+    align-self: center;
+    justify-content: center;
 }
 
 main .principal .card1 .img1 img {
     height: 450px;
     border-radius: 100px;
-    margin-left: 25px;
 }
 
 main .principal .card1 .texto1 {
     text-align: center;
     color: white;
-    margin-left: 50px;
+    margin-left: 100px;
     font-size: 30px;
+}
+
+main .principal .produtos {
+    display: flex;
+    width: 85%;
+    height: 550px;
+    width: 100%;
+    align-items: center;
+    align-self: center;
+    justify-content: space-evenly;
+    padding-bottom: 200px;
+}
+
+main .principal .produtos .minicard {
+    width: 300px;
+    height: 300px;
+    color: aliceblue;
+    text-align: center;
+    align-self: flex-start;
+}
+
+main .principal .produtos .card-text {
+    text-align: justify;
+    height: 85px;
+}
+
+main .principal .produtos a {
+    padding-top: 12px;
+    transition: 1s;
+}
+
+main .principal .produtos a:hover {
+    background-color: aliceblue;
+    color: #0d6efd;
+}
+
+main .principal .produtos img {
+    width: 300px;
+    height: 300px;
 }
