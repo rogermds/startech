@@ -1,9 +1,8 @@
 html body {
-    height: 2000px;
+    height: auto;
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: -1;
     font-family: 'Baloo Tammudu 2', cursive;
 }
 
@@ -26,18 +25,18 @@ header .wrapper {
     border: 1px rgb(68, 11, 109) solid;
 }
 
-header div.logo a {
+
+div.logo a {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
-header div.logo a h1 {
+div.logo a h1 {
     margin: 20px 0px 0px 20px;
     font-family: 'Baloo Tammudu 2', cursive;
 }
-
-header .logo img {
+.logo img {
     height: 75px;
     margin-left: 20px;
 }
@@ -96,12 +95,13 @@ main .principal .card1 {
 main .principal .card1 .img1 img {
     height: 450px;
     border-radius: 100px;
+    margin-left: 150px;
 }
 
 main .principal .card1 .texto1 {
-    text-align: center;
+    text-align: left;
     color: white;
-    margin-left: 100px;
+    margin: 0px 150px;
     font-size: 30px;
 }
 
@@ -125,7 +125,7 @@ main .principal .produtos .minicard {
 }
 
 main .principal .produtos .card-text {
-    text-align: justify;
+    text-align: center;
     height: 85px;
 }
 
@@ -142,4 +142,78 @@ main .principal .produtos a:hover {
 main .principal .produtos img {
     width: 300px;
     height: 300px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 9%, rgb(21, 31, 46) 30%, rgba(2, 0, 36, 1) 54%);
+    color: aliceblue;
+    justify-content: space-between;
+    border: 1px rgb(68, 11, 109) solid;
+}
+
+footer .logo {
+    align-self: center;
+    margin-left: 50px;
+}
+
+footer .socialmedia {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 65px;
+}
+
+footer .socialmedia a img {
+    width: 64px;
+    height: 64px;
+}
+
+
+footer .direitos {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-self: flex-end;
+    color: rgb(83, 83, 83);
+}
+
+footer .direitos p {
+    align-self: center;
+    margin-bottom: 8;
+}
+
+footer .direitos .siga {
+    align-self: center;
+    margin-top: 50px;
+}
+
+footer .direitos img {
+    height: 200px;
+    width: 600px;
+}
+
+footer .rightside {
+    display: flex;
+}
+
+footer .rightside .info {
+    align-self: center;
+    color: aliceblue;
+    margin: 40Px 25px 0px 0px;
+}
+
+
+footer .mapa {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 120px 10px 20px;
+}
+
+.wppfixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
 }
