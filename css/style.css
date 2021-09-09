@@ -1,5 +1,5 @@
-html body {
-    height: auto;
+html, body {
+    width: 100% auto;
     background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ header {
 header .wrapper {
     padding: 0px 15px 0px 15px;
     display: flex;
-    width: 100%;
+    width: 100% auto;
     height: 75px;
     justify-content: space-between;
     background: rgb(2, 0, 36);
@@ -35,7 +35,13 @@ div.logo a {
 div.logo a h1 {
     margin: 20px 0px 0px 20px;
     font-family: 'Baloo Tammudu 2', cursive;
+    transition: 1s;
 }
+
+div.logo a h1:hover {
+    color: aliceblue;
+}
+
 .logo img {
     height: 75px;
     margin-left: 20px;
@@ -84,12 +90,16 @@ main .principal {
 
 main .principal .card1 {
     display: flex;
-    width: 100%;
-    height: 500px;
+    width: 100% auto;
+    height: 500px auto;
     margin: 200px 0px 200px 0px;
     align-items: center;
     align-self: center;
     justify-content: center;
+}
+
+main .principal .card1 .img1 {
+    width: auto;
 }
 
 main .principal .card1 .img1 img {
@@ -101,8 +111,9 @@ main .principal .card1 .img1 img {
 main .principal .card1 .texto1 {
     text-align: left;
     color: white;
-    margin: 0px 150px;
+    margin: 0px 100px;
     font-size: 30px;
+    max-height: 100%;
 }
 
 main .principal .produtos {
@@ -122,11 +133,16 @@ main .principal .produtos .minicard {
     color: aliceblue;
     text-align: center;
     align-self: flex-start;
+    font-size: 18px;
 }
 
 main .principal .produtos .card-text {
     text-align: center;
     height: 85px;
+}
+
+main .principal .produtos .card-body {
+    padding: 5px 0px 0px 0px;
 }
 
 main .principal .produtos a {
@@ -144,10 +160,64 @@ main .principal .produtos img {
     height: 300px;
 }
 
+main .parceiros {
+    display: flex;
+    flex-direction: column;
+    width: 100% auto;
+    height: 600px;
+    margin: 150px 50px 200px 50px;
+    align-items: center;
+    background-color: rgb(16, 26, 43);
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+main .parceiros .textoparceiros p {
+    margin-top: 20px;
+    color: #0d6efd;
+    font-size: 30px;
+    background-color: rgb(35, 58, 95);
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 15px 10px 0px 10px;
+    transition: 1s;
+}
+
+main .parceiros .textoparceiros p:hover {
+    border-color: aliceblue;
+    color: antiquewhite;
+}
+
+main .parceiros .logoparceiros {
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .parceiros .logoparceiros a {
+    margin: 30px 60px 0px 0px;
+}
+main .parceiros .logoparceiros a img {
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------- */
+
 footer {
     display: flex;
     width: 100%;
-    height: 250px;
+    height: 250px auto;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 9%, rgb(21, 31, 46) 30%, rgba(2, 0, 36, 1) 54%);
     color: aliceblue;
     justify-content: space-between;
@@ -187,6 +257,8 @@ footer .direitos p {
 footer .direitos .siga {
     align-self: center;
     margin-top: 50px;
+    color: aliceblue;
+    font-size: 20px;
 }
 
 footer .direitos img {
