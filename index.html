@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>StarTech - Home</title>
 </head>
@@ -26,7 +25,8 @@
             <div class='navegation'>
             <ul>
                 <a href="#"><li>Produtos</li></a>
-                <a href="#"><li>Contatos</li></a>
+                <a href="#"><li>Parceiro</li></a>
+                <a href="#"><li>Fale conosco</li></a>
                 <a href="#"><li>Sobre</li></a>
             </ul>
             </div>
@@ -86,6 +86,23 @@
                         <a href="https://www.cisco.com/c/pt_br/index.html"><img src="./images/icons/cisco.png" alt="cisco"></a>
                         <a href="https://www.tsmc.com/english"><img src="./images/icons/tsmc.png" alt="tsmc"></a>
                     </div>
+            </div>
+            <div class='faleconosco'>
+                <div class='tituloform'>
+                    <p>Deixe a sua mensagem e entraremos em contato:</p>
+                </div>
+                <div class='form'>
+                    <form>
+                            <input type='text' name='nome' id='nome' maxlength='30' placeholder='Nome Completo'>
+                            <input type='text' name='empresa' id='empresa' maxlength='30' placeholder='Empresa'> <br>
+                            <input type='tel' name='telefone' id='telefone' maxlength='15' placeholder='DDD + Telefone'>
+                            <input type='email' name='email' id='email' maxlength='30' placeholder='Email'> <br>
+                            <textarea type='text' name='mensagem' id='mensagem' maxlength='256' placeholder='Mensagem'></textarea> <br>
+                            <input type='checkbox' name='termo' id='termo' maxlength='30' size='10'> 
+                            <label for="termo"> Ao informar meus dados, concordo com a <a href="#"><b><u>Política de Privacidade</u></b></a>. </label>
+                            <br>
+                            <button type="submit">Enviar</button>
+                    </form>
                 </div>
             </div>
         </div>
