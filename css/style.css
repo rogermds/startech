@@ -109,7 +109,7 @@ main .principal {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 1% 
 }
 
 main .principal .card1 {
@@ -124,7 +124,7 @@ main .principal .card1 {
 main .principal .card1 .img1 img {
     width: 140%;
     border-radius: 100px;
-    margin-left: 5%;
+    margin-left: 20%;
 }
 
 main .principal .card1 .texto1 {
@@ -133,7 +133,7 @@ main .principal .card1 .texto1 {
     font-size: 2.4rem;
     position: relative;
     width: 100%;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-right: 5%;
 }
 
@@ -190,7 +190,7 @@ main .parceiros {
     background-color: rgb(21, 17, 54);
     border-radius: 20px;
     border: 1px rgb(68, 11, 109) solid;
-    margin: 0% 0% 15% 5%
+    margin: 5% 5%
 }
 
 main .parceiros .textoparceiros p {
@@ -229,7 +229,7 @@ main .faleconosco {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px rgb(68, 11, 109) solid;
-    margin: 0% 0% 15% 10%;
+    margin: 0% 10% 15% 10%;
 }
 
 main .tituloform {
@@ -387,3 +387,76 @@ footer .direitos {
     bottom: 20px;
     right: 20px;
 }
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 50%;
+    }
+    main .principal .card1 .img1 img {
+        width: 120%;
+}
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 35%;
+    }
+    main .principal .card1 .img1 img {
+        width: 110%;
+}
+
+    main .parceiros .logoparceiros a {
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+}
+    main .parceiros .logoparceiros img {
+        width: 100%;
+        height: 100%;
+}
+    .principal .faleconosco form input {
+        width: 85%;
+        margin-left: 15px;
+    }
+
+    .wrapper .centro .socialmedia a img {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+    }
+}
+
+    @media (max-width: 425px) {
+        html {
+            font-size: 20%;
+        }
+
+        header .wrapper .logo a img {
+            width: 20px;
+            height: 20px;
+        }
+
+        main .principal .card1 .img1 img {
+            width: 100%;
+    }
+    
+        main .parceiros .logoparceiros a {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+    }
+        main .parceiros .logoparceiros img {
+            width: 100%;
+            height: 100%;
+    }
+        .principal .faleconosco form input {
+            width: 85%;
+            margin-left: 15px;
+        }
+    
+        .wrapper .centro .socialmedia a img {
+            width: 20px;
+            height: 20px;
+            margin: 0;
+        }
+    }
