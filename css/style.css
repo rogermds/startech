@@ -1,40 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+
 html {
-    position: absolute;
-    width: 100%;
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100vh;
+    font-family: 'Baloo Tammudu 2', cursive;
     background-image: url('../images/background.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-size: 1.6rem;
     overflow: auto;
 }
 
-
-body {
-    background-image: url('../images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Baloo Tammudu 2', cursive;
-    overflow: auto;
+.wrapper{
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
 }
 
 header {
     position: sticky;
     top: 0px;
     left: 0px;
-    z-index: 1;
+    z-index: 10;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 9%, rgb(36, 60, 97) 30%, rgba(2, 0, 36, 1) 54%);
+    border-bottom: 1px rgb(68, 11, 109) solid;
+    border-top: 1px rgb(68, 11, 109) solid;
 }
 
 header .wrapper {
-    padding: 0px 15px 0px 15px;
     display: flex;
-    width: 100% auto;
-    height: 75px;
     justify-content: space-between;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 9%, rgb(36, 60, 97) 30%, rgba(2, 0, 36, 1) 54%);
     align-items: center;
-    border: 1px rgb(68, 11, 109) solid;
+    width: 95%;
 }
-
 
 div.logo a {
     display: flex;
@@ -43,7 +56,7 @@ div.logo a {
 }
 
 div.logo a h1 {
-    margin: 20px 0px 0px 20px;
+    margin: 15px 0px 0px 10px;
     font-family: 'Baloo Tammudu 2', cursive;
     transition: 1s;
 }
@@ -53,14 +66,12 @@ div.logo a h1:hover {
 }
 
 .logo img {
-    height: 75px;
-    margin-left: 20px;
-    width: 100%;
+    height: 50px;
 }
 
 header div.navegation ul {
     display: flex;
-    font-size: 20px;
+    font-size: 1.6rem;
     list-style: none;
     align-items: center;
     margin: 0px;
@@ -74,18 +85,18 @@ header div.navegation ul a li {
     background-color: rgb(19, 19, 56);
     border: 1px solid;
     border-radius: 20px;
-    padding: 8px 20px;
-    padding-bottom: 0px;
+    padding: 8px 20px 0px 20px;
     transition: 1s;
 }
 
 header div.navegation ul a li:last-child {
-    margin-right: 40px;
+    margin-right: 15px;
 }
 
 header div .navegation ul a li:hover {
     background-color: aliceblue;
 }
+
 
 main {
     display: flex;
@@ -97,70 +108,73 @@ main .principal {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    margin-top: 1%;
 }
 
 main .principal .card1 {
     display: flex;
-    width: 100% auto;
-    height: 500px auto;
-    margin: 200px 0px 200px 0px;
+    margin: 15% 0 10% 0;
+    width: 100%;
     align-items: center;
     align-self: center;
     justify-content: center;
 }
 
-main .principal .card1 .img1 {
-    width: 100% auto;
-}
-
 main .principal .card1 .img1 img {
-    height: 450px;
+    width: 140%;
     border-radius: 100px;
-    margin-left: 150px;
+    margin-left: 5%;
 }
 
 main .principal .card1 .texto1 {
     text-align: left;
     color: white;
-    margin: 0px 100px;
-    font-size: 30px;
-    max-height: 100%;
+    font-size: 2.4rem;
     position: relative;
     width: 100%;
+    margin-left: 15%;
+    margin-right: 5%;
 }
 
 main .principal .produtos {
     display: flex;
-    width: 85%;
-    height: 550px;
     width: 100%;
-    align-items: center;
-    align-self: center;
     justify-content: space-evenly;
-    padding-bottom: 200px;
+    margin: 10% 0 10% 0;
 }
 
 main .principal .produtos .minicard {
-    width: 300px;
-    height: 300px;
+    width: 33vw;
+    height: 33vw;
     color: aliceblue;
     text-align: center;
     align-self: flex-start;
-    font-size: 18px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+main .principal .produtos .minicard img {
+    width: 60%;
+    height: 60%;
+    margin-right: 40px;
 }
 
 main .principal .produtos .card-text {
     text-align: center;
-    height: 85px;
+    font-size: 1.8rem;
+    font-weight: 100;
 }
 
 main .principal .produtos .card-body {
     padding: 5px 0px 0px 0px;
+    width: 90%;
 }
 
 main .principal .produtos a {
     padding-top: 12px;
     transition: 1s;
+    font-size: 1.5rem;
 }
 
 main .principal .produtos a:hover {
@@ -168,31 +182,25 @@ main .principal .produtos a:hover {
     color: #0d6efd;
 }
 
-main .principal .produtos img {
-    width: 300px;
-    height: 300px;
-}
-
 main .parceiros {
     display: flex;
     flex-direction: column;
-    width: 100% auto;
-    height: 600px;
-    margin: 150px 50px 200px 50px;
+    width: 90%;
     align-items: center;
     background-color: rgb(21, 17, 54);
     border-radius: 20px;
     border: 1px rgb(68, 11, 109) solid;
+    margin: 0% 0% 15% 5%
 }
 
 main .parceiros .textoparceiros p {
-    margin-top: 20px;
+    margin: 15% 0;
     color: #0d6efd;
-    font-size: 30px;
+    font-size: 2.4rem;
     background-color: rgb(35, 58, 95);
     border: 1px solid;
     border-radius: 20px;
-    padding: 15px 10px 0px 10px;
+    padding: 10px 10px 0px 10px;
     transition: 1s;
 }
 
@@ -203,33 +211,31 @@ main .parceiros .textoparceiros p:hover {
 
 main .parceiros .logoparceiros {
     display: flex;
-    width: 85%;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
 
 main .parceiros .logoparceiros a {
-    margin: 30px 60px 0px 0px;
+    margin: 2%;
 }
 
 main .faleconosco {
     display: flex;
     flex-direction: column;
-    height: 625px;
     background-color: rgb(21, 17, 54);
-    width: auto;
-    margin: 0px 20% 150px 20%;
+    width: 80%;
     border-radius: 50px;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px rgb(68, 11, 109) solid;
+    margin: 0% 0% 15% 10%;
 }
 
 main .tituloform {
     text-align: center;
-    margin: 50px 0px 30px 0px;
-    font-size: 30px;
+    margin: 2% 0 4% 0;
+    font-size: 2.2rem;
     color: aliceblue;
 }
 
@@ -241,7 +247,7 @@ main .faleconosco .form {
 main .faleconosco .form input {
     margin: 0px 0px 30px 50px;
     width: 40%;
-    font-size: 18px;
+    font-size: 2rem;
     text-align: left;
     border-radius: 20px;
     padding-left: 15px;
@@ -251,11 +257,11 @@ main .faleconosco .form input {
 }
 
 main form textarea {
-    width: 85%;
+    width: 87.5%;
     height: 175px;
     margin-left: 5%;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 2rem;
     line-height: 30px;
     border-radius: 20px;
     padding-left: 15px;
@@ -284,13 +290,13 @@ main form label a:hover {
 }
 
 main .faleconosco form button {
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
     background-color: rgb(35, 58, 95);
     border: 1px solid;
     border-radius: 50px;
     padding: 0px 40px 5px 40px;
     color: #0d6efd;
-    font-size: 30px;
+    font-size: 2.2rem;
     transition: 1s;
 }
 
@@ -298,63 +304,57 @@ main .faleconosco form button:hover {
     color: aliceblue;
 }
 
-
-
-
-
-
-
-
-/* ------------------------------- */
-
 footer {
     display: flex;
-    width: 100%;
-    height: 250px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 9%, rgb(21, 31, 46) 30%, rgba(2, 0, 36, 1) 54%);
     color: aliceblue;
     justify-content: space-between;
-    border: 1px rgb(68, 11, 109) solid;
+    border-top: 1px rgb(68, 11, 109) solid;
+
+}
+
+footer .wrapper {
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: space-around;
 }
 
 footer .logo {
     align-self: center;
-    margin-left: 50px;
 }
 
 footer .socialmedia {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
+}
+
+footer .socialmedia a {
+    margin-right: 25px;
 }
 
 footer .socialmedia a img {
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
 }
 
-
-footer .direitos {
+footer .centro {
     display: flex;
-    height: 100%;
     flex-direction: column;
     align-self: flex-end;
-    color: rgb(83, 83, 83);
 }
 
-footer .direitos p {
+footer .centro .siga {
     align-self: center;
-    margin-bottom: 8;
-}
-
-footer .direitos .siga {
-    align-self: center;
-    margin-top: 50px;
+    margin-top: 4%px;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 2.0rem;
 }
 
-footer .direitos img {
+footer .centro img {
     height: 200px;
     width: 600px;
 }
@@ -366,19 +366,24 @@ footer .rightside {
 footer .rightside .info {
     align-self: center;
     color: aliceblue;
-    margin: 40Px 25px 0px 0px;
+    margin: 40px 40px 0px 0px;
+    font-size: 1.8rem;
 }
 
 
 footer .mapa {
     display: flex;
     flex-direction: column;
-    margin: 10px 120px 10px 20px;
+    margin-top: 3%;
+}
+
+footer .direitos {
+    color: rgb(78, 78, 78);
+    margin-top: 2%;
 }
 
 .wppfixed {
     position: fixed;
     bottom: 20px;
     right: 20px;
-
 }
