@@ -64,7 +64,7 @@ header .wrapper {
 }
 
 .logo img {
-    height: 8vh;
+    height: 5rem;
 }
 
 
@@ -332,8 +332,20 @@ footer .wrapper {
 }
 
 footer .logo {
+    display: flex;
+    flex-direction: column;
     align-self: center;
     grid-column: 1/1;
+}
+
+footer .logo {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+footer .logo p {
+    margin-left: 5%;
+    color: white;
 }
 
 footer .centro {
@@ -414,8 +426,24 @@ footer .direitos {
     html {
         font-size: 35%;
     }
+    header {
+        height: 8vh;
+    }
+    header .wrapper {
+        height: 8vh;
+    }
+    .logo img {
+        height:7rem;
+    }
+    div.logo a h1 {
+        font-size: 5rem;
+    }
     footer .wrapper {
         grid-template-columns: 1fr 2fr 1fr;
+    }
+    footer .logo p {
+        font-size: 1.8rem;
+        margin-left: 1%;
     }
     .rightside .mapa {
         display: none;
@@ -429,18 +457,143 @@ footer .direitos {
     html {
         font-size: 27.5%;
     }
-    .card1 {
-        flex-direction: column;
-        flex-flow: s;
+    header {
+        height: 7.5vh;
     }
-    .card1 .texto1 {
+    header .wrapper {
+        height: 7.5vh;
+    }
+    .logo img {
+        height: 8rem;
+    }
+    div.logo a h1 {
+        margin: 15px 0px 0px 10px;
+        font-size: 5rem;
+    }
+    main .principal .card1 {
+        flex-direction: column;
+        width: 100%;
+        margin: 10% 0;
+    }
+    main .principal .card1 .img1 {
+        margin-left: 0;
+        width: 70%;       
+    }
+    main .principal .card1 .texto1 {
+        font-size: 2.4rem;
+        margin: 5% 15% 0 15%;
         text-align: center;
-        padding: 0 15%;
     }
     .wrapper .principal .produtos {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-
+    main .principal .produtos .minicard {
+        margin: 0 10% 5% 10%;
+        font-size: 3rem;
+    }
+    main .principal .produtos .minicard img {
+        width: 60%;
+        margin-bottom: 2%;
+    }
+    main .principal .produtos .card-text {
+        font-size: 2.4rem;
+    }
+    main .principal .produtos a {
+        padding-top: 1.2rem;
+        font-size: 2.6rem;
+        border-radius: 15%;
+    }
+    main .parceiros .textoparceiros p {
+        font-size: 3rem;
+    }
+    main .parceiros .logoparceiros a img {
+        width: 20rem;
+    }
+    main .tituloform {
+        font-size: 3rem;
+    }
+    main .faleconosco .form input {
+        padding-left: 10px;
+    }
+    main form label {
+        font-size: 2rem;
+    }
+    main .faleconosco form button {
+        margin: 10px 0px;
+        padding: 2.5px 25px;
+        font-size: 2.2em;
+    }
+    footer .rightside .info {
+        margin: 12% 7% 0 0;
+    }
+    footer .logo p {
+        font-size: 1.9rem;
+        margin-left: 5%;
+    }
+    header .navegation {
+        display: none;
+    }
+    .one, .two, .three {
+        background-color: #579aff;
+        height: 0.75rem;
+        width:6rem;
+        margin: 1.1rem;
+        transition-duration: 0.5s;
+    }
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+    }
+    .menu-section.on {
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: rgb(21, 17, 54);
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-section.on .navegation {
+        display: block;
+        z-index: 5;
+        margin-top: 25%;
+    }
+    .menu-section.on .menu-toggle{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    }
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(2.5px, 5px);
+    }
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(7px, -9px);
+    }
+    
+    .menu-section.on .navegation ul a li {
+        display: block;
+        background-color: rgb(19, 19, 56);
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 8px 20px 0px 20px;
+        transition: 1s;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 60rem;   
+    } 
+    .menu-section.on .navegation ul {
+        display: block;
+        font-size: 4rem;
+        list-style: none;
+        align-items: center;
+        margin: 0;
+        transition-duration: 0.5s;
+    }
 }
 
 
